@@ -39,5 +39,13 @@ class ViewController: UIViewController,blockDelegate {
         
     }
     
+    
+    @IBAction func goFoodListVC(_ sender: Any) {
+        let board:UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil);
+        let vc:TableListViewController = board.instantiateViewController(withIdentifier: "TableListViewController") as! TableListViewController;
+        self.present(vc, animated: true, completion: nil);
+   
+    }
+    
 }
 
